@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>861</width>
+    <height>546</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Grabber Lotus 3</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>0</y>
+      <width>160</width>
+      <height>66</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>6</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Size Image</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QScrollBar" name="scrollBarWidthImg">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditWidthImage"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>80</y>
+      <width>160</width>
+      <height>66</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Heigh Image</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QScrollBar" name="scrollBarHeightImg">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditHeightImage"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>646</width>
+      <height>406</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnGrab">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>320</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Grab</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>240</y>
+      <width>160</width>
+      <height>66</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>offset file</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QScrollBar" name="scrollBarOffsetFile">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditOffsetFile"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="btnGrayPal">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>350</y>
+      <width>151</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gray Scalle Pallete</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>160</y>
+      <width>160</width>
+      <height>66</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Offset Image</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QScrollBar" name="scrollBarOffsetImg">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditOffsetImg"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_5">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>380</y>
+      <width>201</width>
+      <height>109</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinimumSize</enum>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>automatic find</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>7</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="btnNextPalPicture">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>91</width>
+           <height>46</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>46</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="accessibleDescription">
+          <string/>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Next Palete 
+Picture</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnNextPicture">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>91</width>
+           <height>46</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>46</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="accessibleDescription">
+          <string/>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Next
+ Picture</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnSaveImg">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Save Grabed Image</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_6">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>410</y>
+      <width>221</width>
+      <height>89</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_6">
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Show Image</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="btnLoadedImg">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Loaded</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnActualImg">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Actual</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnRepleace">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Repleace</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_7">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>410</y>
+      <width>311</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_7">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>path to loaded Image</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLineEdit" name="lineEditLoadImg"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnLoad">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Load</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>861</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGrabger">
+    <property name="title">
+     <string>Grabger</string>
+    </property>
+   </widget>
+   <addaction name="menuGrabger"/>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
